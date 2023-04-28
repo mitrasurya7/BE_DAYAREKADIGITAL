@@ -8,4 +8,10 @@ Perlu dipikirkan secara lebih matang tentang skema data serta relasi yang dibutu
 2. Bagaimana jika terdapat banyak user yang mengakses API tersebut secara bersamaan???
 Untuk menangani Hal tersebut saya telah menerapkan Redis.io yang berfungsi untu caching data agar dapat meringankan kerja server sehingga resource server dapat di alokasikan di tempat lain. 
 
+### Cara menjalankan
+1. Pastikan menggunakan mysql karena disini menggunkan mysql.
+2. Setting connection pada folder library username, password, database sesuai data yang anda punya
+3. jalankan "yarn setup" atau "npm run setup"
+4. jalankan "yarn dev" atau "npm run dev"
+
 ### pada test kali ini saya menyertakan dummy test via postman collection
