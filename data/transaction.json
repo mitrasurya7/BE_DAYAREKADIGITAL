@@ -1,0 +1,18 @@
+[
+    {
+        "customer_id": 1,
+        "menu": "pecel",
+        "price": 10000,
+        "qty": 2,
+        "payment":"cash",
+        "total": 20000
+    },
+    {
+        "customer_id": 1,
+        "menu": "bakso",
+        "price": 10000,
+        "qty": 2,
+        "payment":"cash",
+        "total": 20000
+    }
+]

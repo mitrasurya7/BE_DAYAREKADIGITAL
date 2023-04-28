@@ -1,0 +1,782 @@
+{
+	"info": {
+		"_postman_id": "6abcaa35-ecec-4529-bb31-e23e98544f5c",
+		"name": "BE_REKA_DAYA_DIGITAL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24878323"
+	},
+	"item": [
+		{
+			"name": "POST NEW CUSTOMERS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"wahyu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST NEW CUSTOMERS",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"wahyu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-rPTBkgVB0drUeVuGl8qn1WgoPCg\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 00:57:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Customer created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET NEW CUSTOMER sort [A-Z]",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET NEW CUSTOMER sort [A-Z]",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-HztNHEt5O7UxIBPC3NSfBl/Xb1A\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 00:59:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"John Doe\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"wahyu\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "UPDATE CUSTOMER",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"bayu\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/customers/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "UPDATE CUSTOMER",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"bayu\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customers/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-PRtLjNfrKQ+Umlft6XYH6nKYnME\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 01:04:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Customer updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE CUSTOMER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/customers/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customers",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE CUSTOMER",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customers/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-I1hiO/USZhyUKqOhODBip+hHZQk\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 01:05:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Customer deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "POST NEW TRANSACTION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"customer_id\":5,\r\n        \"menu\":\"Nasi Padang\",\r\n        \"price\":13000,\r\n        \"qty\":4,\r\n        \"payment\":\"debit\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "POST NEW TRANSACTION",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"customer_id\":5,\r\n        \"menu\":\"Nasi Padang\",\r\n        \"price\":13000,\r\n        \"qty\":4,\r\n        \"payment\":\"debit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "46"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e-NoYZXlXmBOZ7Sa7lqg4KJHgsi5M\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 01:08:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Transaction created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GET TRANSACTION by DATE DESC",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET TRANSACTION by DATE DESC",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "828"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"33c-ILtLD9rk9zkNic5gTAUYXSXlR7s\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 01:09:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 13,\n        \"customer_id\": 5,\n        \"menu\": \"Nasi Padang\",\n        \"price\": 13000,\n        \"qty\": 4,\n        \"payment\": \"debit\",\n        \"total\": 52000,\n        \"created_at\": \"2023-04-27T18:08:13.000Z\"\n    },\n    {\n        \"id\": 6,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T12:35:37.000Z\"\n    },\n    {\n        \"id\": 5,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T12:35:21.000Z\"\n    },\n    {\n        \"id\": 1,\n        \"customer_id\": 1,\n        \"menu\": \"pecel\",\n        \"price\": 10000,\n        \"qty\": 2,\n        \"payment\": \"cash\",\n        \"total\": 20000,\n        \"created_at\": \"2023-04-27T11:55:06.000Z\"\n    },\n    {\n        \"id\": 2,\n        \"customer_id\": 1,\n        \"menu\": \"bakso\",\n        \"price\": 10000,\n        \"qty\": 2,\n        \"payment\": \"cash\",\n        \"total\": 20000,\n        \"created_at\": \"2023-04-27T11:55:06.000Z\"\n    },\n    {\n        \"id\": 4,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T11:55:06.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET TRANSACTION with QUERY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/transactions?Query=ayam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "Query",
+							"value": "ayam"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET TRANSACTION with QUERY",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/transactions?Query=ayam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "Query",
+									"value": "ayam"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "421"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a5-+nKRPr7T9PRVuWtCB6Aft62Gqg8\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 01:10:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T12:35:37.000Z\"\n    },\n    {\n        \"id\": 5,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T12:35:21.000Z\"\n    },\n    {\n        \"id\": 4,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T11:55:06.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET CUSTOMER by Customer Active",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/transactions?Customer=active",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "Customer",
+							"value": "active"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET CUSTOMER by Customer Active",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/transactions?Customer=active",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "Customer",
+									"value": "active"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "933"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3a5-Jw6h6Cb+o9RQskbUBqqAun8xhUI\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 01:11:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"John Doe\",\n        \"id\": 1,\n        \"customer_id\": 1,\n        \"menu\": \"pecel\",\n        \"price\": 10000,\n        \"qty\": 2,\n        \"payment\": \"cash\",\n        \"total\": 20000,\n        \"created_at\": \"2023-04-27T11:55:06.000Z\"\n    },\n    {\n        \"name\": \"John Doe\",\n        \"id\": 2,\n        \"customer_id\": 1,\n        \"menu\": \"bakso\",\n        \"price\": 10000,\n        \"qty\": 2,\n        \"payment\": \"cash\",\n        \"total\": 20000,\n        \"created_at\": \"2023-04-27T11:55:06.000Z\"\n    },\n    {\n        \"name\": \"John Doe\",\n        \"id\": 4,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T11:55:06.000Z\"\n    },\n    {\n        \"name\": \"John Doe\",\n        \"id\": 5,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T12:35:21.000Z\"\n    },\n    {\n        \"name\": \"John Doe\",\n        \"id\": 6,\n        \"customer_id\": 1,\n        \"menu\": \"ayam pangang\",\n        \"price\": 15000,\n        \"qty\": 1,\n        \"payment\": \"cash\",\n        \"total\": 15000,\n        \"created_at\": \"2023-04-27T12:35:37.000Z\"\n    },\n    {\n        \"name\": \"wawan\",\n        \"id\": 13,\n        \"customer_id\": 5,\n        \"menu\": \"Nasi Padang\",\n        \"price\": 13000,\n        \"qty\": 4,\n        \"payment\": \"debit\",\n        \"total\": 52000,\n        \"created_at\": \"2023-04-27T18:08:13.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GET TRANSACTION by Customer & Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/transactions?Customer=active&Query=nasi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"transactions"
+					],
+					"query": [
+						{
+							"key": "Customer",
+							"value": "active"
+						},
+						{
+							"key": "Query",
+							"value": "nasi"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET TRANSACTION by Customer & Query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/transactions?Customer=active&Query=nasi",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions"
+							],
+							"query": [
+								{
+									"key": "Customer",
+									"value": "active"
+								},
+								{
+									"key": "Query",
+									"value": "nasi"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "157"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9d-/vDxQ5/PZstxyXrY3jEYTKNdFdM\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 01:13:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"name\": \"wawan\",\n        \"id\": 13,\n        \"customer_id\": 5,\n        \"menu\": \"Nasi Padang\",\n        \"price\": 13000,\n        \"qty\": 4,\n        \"payment\": \"debit\",\n        \"total\": 52000,\n        \"created_at\": \"2023-04-27T18:08:13.000Z\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
