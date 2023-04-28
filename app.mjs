@@ -7,7 +7,7 @@ import express from "express";
 import router from "./router/index.mjs";
 import connection from "./library/database.mjs";
 const app = new express();
-const port = process.env.PORT ||3000;
+
 
 connection.connect((err) => {
   if (err) {
@@ -25,6 +25,6 @@ app.use((req, res, next) => {
   res.status(404).send("Sorry cant find that!");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
+
+
+export default app;

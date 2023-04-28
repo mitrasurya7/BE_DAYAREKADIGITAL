@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.mjs",
-    "dev": "nodemon app.mjs",
+    "start": "node ./bin/www.mjs",
+    "dev": "nodemon ./bin/www.mjs",
     "setup": "node migration.mjs && node seeding.mjs"
   },
   "keywords": [],
